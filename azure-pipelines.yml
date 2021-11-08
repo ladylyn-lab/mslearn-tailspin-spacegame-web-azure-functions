@@ -101,13 +101,13 @@ stages:
             displayName: 'Update web app settings'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
-              appName: $(WebAppName)
-              resourceGroupName: $(ResourceGroupName)
+              appName: $(LeaderboardAppName)
+              resourceGroupName: $(tailspin-space-game-rg)
               appSettings: |
                 [
                   {
-                    "name": "AppSettings:LeaderboardFunctionUrl",
-                    "value": "http://$(LeaderboardAppName).azurewebsites.net/api/LeaderboardFunction",
+                    "name": "tailspin-space-game-leaderboard-491",
+                    "value": "https://tailspin-space-game-leaderboard-491.azurewebsites.net",
                     "slotSetting": false
                   }
                 ]
